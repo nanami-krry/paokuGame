@@ -56,21 +56,39 @@
     <Analyzer Include="D:\vs2019\1\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\Application\Tag.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Obstacles.cs" />
     <Compile Include="Assets\scripts\Framework\MVC\Model.cs" />
     <Compile Include="Assets\scripts\Application\Args\ScenesArgs.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Item\AddTime.cs" />
     <Compile Include="Assets\scripts\Framework\Pool\ReusableObject.cs" />
     <Compile Include="Assets\scripts\Framework\MVC\View.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Item\Item.cs" />
     <Compile Include="Assets\scripts\Framework\Pool\IReusable.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\People.cs" />
+    <Compile Include="Assets\scripts\Application\MVC\Controller\EndGameController.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Car.cs" />
+    <Compile Include="Assets\scripts\Application\MVC\Model\GameModel.cs" />
     <Compile Include="Assets\scripts\Framework\Pool\ObjectPool.cs" />
+    <Compile Include="Assets\scripts\Application\MVC\View\PlayerMove.cs" />
     <Compile Include="Assets\scripts\Application\StaticData\StaticData.cs" />
     <Compile Include="Assets\scripts\Application\Consts.cs" />
     <Compile Include="Assets\scripts\Framework\MVC\Controller.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Item\Multiply.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Item\Coin.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Effect.cs" />
+    <Compile Include="Assets\scripts\Application\Common\FllowPlayer.cs" />
+    <Compile Include="Assets\scripts\Application\Common\RoadChange.cs" />
     <Compile Include="Assets\scripts\Application\Game.cs" />
+    <Compile Include="Assets\scripts\Application\Common\PlayerAnim.cs" />
     <Compile Include="Assets\scripts\Framework\MVC\MVC.cs" />
     <Compile Include="Assets\scripts\Framework\Sound\Sound.cs" />
     <Compile Include="Assets\scripts\Application\MVC\Controller\StartUpController.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Item\Magnet.cs" />
+    <Compile Include="Assets\scripts\Application\MVC\Controller\EnterScenceControlller.cs" />
     <Compile Include="Assets\scripts\Framework\MoonSingleton.cs" />
     <Compile Include="Assets\scripts\Framework\Pool\SubPool.cs" />
+    <Compile Include="Assets\scripts\Application\Objects\Item\Invincible.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Res\Shader\Unlit-Transparent Cutout (Cull off).shader" />

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public static class MVC 
+public static class MVC
 {
     //资源
     public static Dictionary<string, Model> Models = new Dictionary<string, Model>();
@@ -22,19 +22,19 @@ public static class MVC
     }
     public static void RegisterModel(Model model)
     {
-       Models[model.Name] = model;
+        Models[model.Name] = model;
     }
-    public static void RegisterController(string eventName,Type controllerType)
+    public static void RegisterController(string eventName, Type controllerType)
     {
         CommandMap[eventName] = controllerType;
     }
     //获取模型model
     public static T GetModel<T>()
-        where T:Model
+    where T : Model
     {
-        foreach(var m in Models.Values)
+        foreach (var m in Models.Values)
         {
-            if(m is T)
+            if (m is T)
             {
                 return (T)m;
             }
@@ -42,7 +42,7 @@ public static class MVC
         return null;
     }
     public static T GetView<T>()
-        where T : View
+    where T : View
     {
         foreach (var v in Views.Values)
         {
@@ -54,17 +54,19 @@ public static class MVC
         return null;
     }
     //发送事件,控制器先接收
-    public static void SendEvent(string eventName,object data = null)
+    public static void SendEvent(string eventName, object data = null)
     {
         if (CommandMap.ContainsKey(eventName))
         {
             Type t = CommandMap[eventName];
             //控制器生成
+
+
             Controller c = Activator.CreateInstance(t) as Controller;
             c.Execute(data);
         }
         //视图处理
-        foreach(var v in Views.Values)
+        foreach (var v in Views.Values)
         {
             if (v.AttentionList.Contains(eventName))
             {

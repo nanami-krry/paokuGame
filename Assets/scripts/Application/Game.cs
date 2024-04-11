@@ -23,11 +23,12 @@ public class Game : MoonSingleton<Game>
         sound = Sound.Instance;
         staticData = StaticData.Instance;
 
-        //游戏启动
         //初始化
         RegisterController(Consts.E_StartUp, typeof(StartUpController));
+        //游戏启动
+        SendEvent(Consts.E_StartUp);
         //完成场景跳转
-        Game.Instance.LoadLevl(1);
+        Game.Instance.LoadLevl(4);
     }
     
     public void LoadLevl(int level)

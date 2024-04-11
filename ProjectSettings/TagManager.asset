@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Road
+  - Item
+  - ItemBeforeTrigger
+  - FxTemporaire
+  - SmallFence
+  - BigFence
+  - Goal
+  - Goalkeeper
+  - Block
+  - BeforeTrigger
+  - MagnetColider
   layers:
   - Default
   - TransparentFX
